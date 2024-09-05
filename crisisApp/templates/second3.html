@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/table1.css">
+    <link rel="stylesheet" href="../static/input.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+      <main>
+        <h1 class="header header2">Structure Identification and Severity</h1>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>tweet_id</th>
+                    <th>tweet_text</th>
+                    <th>image</th>
+                    <th>Severity</th>
+                    <th>Damaged Structure</th>
+                </tr>
+                {% for tweet_id, tweet_text, image_path, damage, structure in data %}
+                <tr>
+                    <td>{{ tweet_id }}</td>
+                    <td>{{ tweet_text  }}</td>
+                    <td> {% load static %}
+                        <img src="{% static image_path %}" width="180" height="150"></td>
+                        <td>{{ damage }}</td>
+                    <td>{{ structure  }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+      </main>
+      <footer></footer>
+    </section>
+  </body>
+</html>

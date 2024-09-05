@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/input.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <div class = "dash">
+        <h4>Disaster Classification and Severity</h4>
+    </div>
+    <form class = form-group action="{% url 'prediction:uploads' %}" method="POST" enctype="multipart/form-data">
+        <br>
+        <h3 class="header">Enter your Excel file and Images</h3>
+        <input type="file" class = second multiple name = "uploadfiles">
+        {% csrf_token %}
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="button-87" role="button" style="left:43%;"onclick="location.href='second'">Upload Files</button>
+    </form>
+    
+</body>
+</html>

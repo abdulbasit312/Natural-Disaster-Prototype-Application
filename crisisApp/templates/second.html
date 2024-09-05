@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/input.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <div class = "dash">
+        <h4>Disaster Classification and Severity</h4>
+    </div>
+    <form class = form-group action="{% url 'prediction:second' %} " method='POST'> {% csrf_token %}
+        <br>
+        <h3 class="header">Choose your desired output</h3>
+        <br>
+        <button class="button-87 btn1" name="one" style="width:35%; margin:0px; left:33%" role="button" onclick="location.href='second'">Informative</button>
+        <br>
+        <br>
+        <button class="button-87 btn2" name="two" style="width:35%; margin:0px; left:33%" role="button" onclick="location.href='second'">Damage (Structure) / Humanitarian</button>
+        <br>
+        <br>
+        <button class="button-87 btn3" name="three" style="width:35%; margin:0px; left:33%" role="button" onclick="location.href='second'">Structure Identification / Severity</button>
+        <br>
+        <br>       
+        <button class="button-87 btn4" name="four" style="width:35%; margin:0px; left:33%" role="button" onclick="location.href='second'">Humanitarian Sub categories</button>
+    </form>
+    
+</body>
+</html>

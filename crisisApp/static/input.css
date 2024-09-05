@@ -1,0 +1,117 @@
+html, body{
+    height:100%;
+    width:100%;
+    margin-top:0
+}
+
+body{
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.2)),url('https://images.unsplash.com/photo-1536245344390-dbf1df63c30a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80');
+    background-repeat: no-repeat;
+    background-position: center fixed;
+    background-size:cover
+}
+
+.dash{
+    font-size : 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top:2px;
+    height: 10%;
+    font-family: 'Bebas Neue', cursive;
+    color:white
+}
+
+.form-group{
+    font-size:25px;
+    letter-spacing:1.5px;
+    text-align:center;
+    margin-bottom: 5px;
+    padding-top: 3%;
+    height:5%;
+    width:50%;
+    margin-left:25%
+}
+
+input[type=text] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    position:absolute;
+    left:37.5%
+  }
+
+  ::placeholder{
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    opacity: 0.5
+
+}
+
+.header{
+    padding-top:30px;
+    font-family: 'Julius Sans One', sans-serif;
+    color:#DAF7A6
+}
+
+.second{
+    font-size:16px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 5px 2px 10px black;
+    width:350px;
+    outline:none;
+    margin-right:20px
+}
+
+::-webkit-file-upload-button{
+    color:white;
+    background:#206a5d;
+    padding: 20px;
+    border:none;
+    border-radius:50px;
+    box-shadow: 1px 0 1px #6b4559;
+    outline: none;
+}
+
+::-webkit-file-upload-button:hover{
+    background-color: #438a5e;
+}
+
+.button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position:absolute;
+  left:43%
+}
+
+.button-87:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+
+button.button-87.btn1{
+    width:100%;
+}
